@@ -1,0 +1,126 @@
+
+
+section#notes {
+  display:block;
+}
+
+.divbg, section {
+  background-image: url('/media/divbg.png');
+  max-width: 40%;
+	max-height: 35%;
+  border-style: solid;
+  border-width: 8px;
+  border-color: #db6085;
+  border-radius: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15%;
+}
+
+section h2, section p, section ul, section ol, .divbg h2, .divbg p, .divbg ul, .divbg ol {
+  margin: 15px;
+}
+
+* {
+  cursor: url('/media/pinkribbon.cur'), auto !important;
+}
+
+html {
+  background-image: url('/media/teddybg.png');
+}
+
+* {
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+  scroll-behavior: smooth;
+  position: relative;
+  font-family: 'Fredoka One', cursive;
+}
+
+a:link, a:visited, a:link:active, a:visited:active {
+	color: #282829;
+	margin-left: 30px;
+}
+a:hover {
+	color: #da7384;
+}
+
+/* homepage index div*/
+#indexd {
+  background-image: url('/media/cinamorollbg.png');
+  background-size: fit;
+  background-position: center;
+}
+
+div#indexd h2 {
+	font-family: 'Fredoka One', cursive;
+	background-color: #ffedf0;
+	margin-left: 40%;
+}
+
+h1 {
+  text-align:center;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 15px;
+  font-family: 'Fredoka One', cursive;
+  font-size:36px;
+}
+
+h2 {
+  background-color: #CCFFED;
+  border-radius: 12px;
+  width: 200px;
+  text-align: center;
+}
+
+/* the div in the what.html file */ #what {
+  width: 425px;
+  height: 300px;
+}
+
+#what p {
+  margin-left: 12px;
+  margin-right: 5px;
+  margin-top: 12px;
+}
+
+div.note {
+  display: block;
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #f0aeb8 #FFE5EE;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #FFE5EE;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #f0aeb8;
+    border-radius: 10px;
+    border: 3px solid #c16774;
+  }
+
+button#add {
+  background-color: #CCFFED;
+  border-radius: 12px;
+  margin: 15px;
+}
+
+button#add:hover {
+  background-color: #7cd0b2;
+  border-radius: 12px;
+  margin: 15px;
+}
