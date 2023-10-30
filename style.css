@@ -4,6 +4,10 @@ section#notes {
   display:block;
 }
 
+section#aesthetic {
+    margin-bottom: 2%;
+}
+
 .divbg, section {
   background-image: url('/media/divbg.png');
   max-width: 40%;
@@ -14,7 +18,7 @@ section#notes {
   border-radius: 50px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 15%;
+  margin-top: 2%;
 }
 
 section h2, section p, section ul, section ol, .divbg h2, .divbg p, .divbg ul, .divbg ol {
