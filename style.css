@@ -1,10 +1,42 @@
+body, section.side {
+    background: #dddddd;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+}
+
+section * , div * {
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+section, div {
+    background: #eeeeee;
+    margin: 5%;
+    border-radius: 12px;
+    flex-basis:  auto;
+    flex-grow: 1;
+}
+
+main {
+    grid-area: main;
+}
+
+section.side {
+    grid-area: side;
+    max-width: none;
+    max-height: none;
+}
+
 @media only screen and (min-width: 720px) {		/* stijlregels voor browserschermen > 720px en < 1024px */
 	body {
 		display: grid;
-		grid-template-columns: 0.5fr 1.5fr;
+		grid-template-columns: 0.5fr 1fr 0.5fr;
 		grid-template-rows: 1fr;
 		gap: 0px 0px;
-		grid-auto-flow: row;
+		grid-auto-flow: column;
 		grid-template-areas:
 			"side main";
 	}
@@ -14,9 +46,9 @@
 	body {
 		display: grid;
 		grid-template-columns: 1fr;
-		grid-template-rows: 0.5fr 1fr;
+		grid-template-rows: 0.5fr 1.5fr;
 		gap: 0px 0px;
-		grid-auto-flow: row;
+		grid-auto-flow: column;
 		grid-template-areas:
 			"side"
 			"main";
@@ -30,8 +62,6 @@
 	scrollbar-color: #A47063 #703434;
 }
 
-
-
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar-track {
 	background: #E58265;
@@ -41,8 +71,6 @@
 	background-color: #A47063;
 	border: 3px solid #703434;
 }
-
-
 
 /**
  * 1. Correct the line height in all browsers.
